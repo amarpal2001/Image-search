@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@200&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Grenze Gotisch', cursive;
+        }
+
+        :root {
+            --b-a-width: 10vw;
+            --b-a-md-width: 15vw;
+            --b-a-sm-width: 20vw;
+        }
+
+        .main_div {
+            width: 100vw;
+            height: 100vh;
+            background: #3598db;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            color: white;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            font-weight: 900;
+            font-size: 40px;
+            text-align: center;
+            position: relative;
+
+        }
+
+        h1::before {
+            content: '';
+            position: absolute;
+            width: var(--b-a-width);
+            transform: translate(-50%);
+            top: 5%;
+            left: 50%;
+            border-bottom: 5px solid #2c3e;
+        }
+
+        h1::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            bottom: -10%;
+            width: var(--b-a-width);
+            border-top: 5px solid #2c3e;
+        }
+
+        img {
+            filter: drop-shadow(1px 2px 8px #070707);
+            margin-left: 100px;
+            border-radius: 10px;
+            transition: ease-in 2s;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_div">
+        <h1>thapa technical</h1>
+        <img src="https://images.unsplash.com/photo-1546587348-d12660c30c50?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fG5hdHVyYWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80"
+            alt="">
+    </div>
+</body>
+
+</html>
